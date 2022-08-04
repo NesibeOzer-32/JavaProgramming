@@ -1,8 +1,8 @@
 # JavaProgramming:
-Inheritance Task:
+Inheritance Task: Example of Inheritance and Method Overriding
 
-SUB clas: car
-Child classes: Toyota,BMW,Tesla
+--- Car
+---Child classes: Toyota,BMW,Tesla
 
 Car is A relationship Toyota,BMW,Tesla
 Parkinglot Has a relationship Toyota,BMW,Tesla
