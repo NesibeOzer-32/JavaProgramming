@@ -34,7 +34,6 @@ public class Car {
 
     }
     /*public void fly(){ tüm arabalarda gecerli olmadığı için eklenmez
-
     }*/
 }
 /*
