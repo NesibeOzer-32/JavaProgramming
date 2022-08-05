@@ -1,7 +1,7 @@
 # JavaProgramming:
 Inheritance Task: Example of Inheritance and Method Overriding
 
---- Car
+---Parent class: Car
 ---Child classes: Toyota,BMW,Tesla
 
 Car is A relationship Toyota,BMW,Tesla
