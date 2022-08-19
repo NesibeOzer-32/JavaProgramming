@@ -54,7 +54,7 @@ public class TryCatchBlocks {
         try {
             Thread.sleep(3000);//checked by compiler
         } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
 
         System.out.println("Cydeo");
@@ -62,7 +62,7 @@ public class TryCatchBlocks {
         try {
             FileInputStream file= new FileInputStream("File path");//checked by compiler
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
 
     }
