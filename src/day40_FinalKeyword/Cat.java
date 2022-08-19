@@ -1,4 +1,4 @@
-package day31_Constructor.day40_FinalKeyword;
+package day40_FinalKeyword;
 
 public class Cat extends Animal{
     public Cat(String name, String breed, char gender, String color, String size, int age) {
