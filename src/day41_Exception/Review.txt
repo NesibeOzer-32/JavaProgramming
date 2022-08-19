@@ -60,7 +60,7 @@ etmemizi isteyecektir . Aksi durumda projeyi compile edemeyiz.
 Exception handlings:
 
 		1. Try & Catch blocks: used for handling checked and unchecked exceptions
-
+                               Hataları, istisnaları ayıklamak için kullanılır.
 						try{
 
 							exception code
@@ -69,7 +69,7 @@ Exception handlings:
 
 							e.printStackTrace();
 
-						}
+						} if else gibi sadece biri işleme giriyor.
 
 
 			Multi-catch block: parent exception type can not be placed before the child exception type

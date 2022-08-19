@@ -20,11 +20,11 @@ public class Checked_vs_Unchecked {
 
         char[] characters ={'A','B','C'};
 
-        //System.out.println(characters[99]); after run error: "ArrayIndexOutOfBoundsException"
+        //System.out.println(characters[99]); after run problem: "ArrayIndexOutOfBoundsException"
         //describe mistake: Index 99 out of bounds for length 3
 
         Student student=null;
-        //System.out.println(student.getName()); error:.NullPointerException
+        //System.out.println(student.getName()); problem:.NullPointerException
         //student.study();
 
         String str = "Wooden Spoon";//Garbage collector
@@ -44,7 +44,7 @@ public class Checked_vs_Unchecked {
         System.out.println("Cydeo");
 
         //FileInputStream file= new FileInputStream("path of the file");Unhandled exception: java.io.FileNotFoundException
-        //compliler able to check-before run it says wat is error
+        //compliler able to check-before run it says wat is problem
     }
 }
 /*
