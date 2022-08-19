@@ -11,6 +11,8 @@ public class MultyCatchBloks {
 
             System.out.println(employee.getSalary()); // Null Pointer Exception
 
+//sıralamada en kapsayıcı olan en altta almak zorunda!
+// sorunu çözebilecek exeptionlar yazılır. biri çözünce kalanlar taranmaz..
         }catch (NullPointerException e){
             System.out.println("First Catch Block");
             e.printStackTrace();
@@ -30,5 +32,15 @@ public class MultyCatchBloks {
 
 
         System.out.println("Tested Completed");
+
+        System.out.println("---------------------------------------------------");
+
+        try {
+            System.out.println("Java".charAt(-1));
+        }catch (RuntimeException e){
+            e.printStackTrace();
+        }
+
+
     }
 }
