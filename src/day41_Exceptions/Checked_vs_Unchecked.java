@@ -1,10 +1,6 @@
-package day41_Exception;
+package day41_Exceptions;
 
 import day39_Recap.CydeoTask.Student;
-
-import javax.sound.midi.Soundbank;
-import java.io.File;
-import java.io.FileInputStream;
 
 public class Checked_vs_Unchecked {
 
