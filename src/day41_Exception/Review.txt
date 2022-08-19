@@ -65,9 +65,9 @@ Exception handlings:
 
 							exception code
 
-						}catch(ExceptionClass  e){
+						}catch(ExceptionClass  e){--(unchecked ise RuntimeException e(parent of unchecked-kapsıyor diğerlerini) )
 
-							e.printStackTrace();
+							e.printStackTrace();---hatanın ne olduğunu rapor ediyor.
 
 						} if else gibi sadece biri işleme giriyor.
 
@@ -85,16 +85,4 @@ Interview Question:
 
 
 
-next Thursday:
-		5. throws keyword
-		6. throw keyword
-		7. Custom Exception
-
-
-Next Next Monday (Jan 31st):
-	OOP Abstraction
-
-
-
-
-	OOP Polymorphism
+nex

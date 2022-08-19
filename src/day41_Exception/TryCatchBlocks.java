@@ -1,5 +1,8 @@
 package day41_Exception;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 public class TryCatchBlocks {
     public static void main(String[] args) {
 
@@ -17,7 +20,7 @@ public class TryCatchBlocks {
 
         System.out.println("Test Completed");
 
-        System.out.println("........................................................................");
+        System.out.println("............................unchecked exception............................................");
 
         System.out.println("Test 2 started");
 
@@ -36,7 +39,7 @@ public class TryCatchBlocks {
             e.printStackTrace(); //Index 200 out of bounds for length 5 (bizim için hatayı raporlar)
            // System.out.println(e.getMessage());Index 200 out of bounds for length 5
         }
-        System.out.println("...........................................................................");
+        System.out.println("..............................unchecked exception.............................................");
         System.out.println("test3 started");
 //önceden bilmiyorum ne olduğunu---RuntimeExpection(unchecked)
         try {
@@ -44,8 +47,23 @@ public class TryCatchBlocks {
         }catch (RuntimeException e){
             e.printStackTrace();
         }
+        System.out.println(".............................checked exception...............................................");
+        System.out.println("Hello");
 
 
+        try {
+            Thread.sleep(3000);//checked by compiler
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        System.out.println("Cydeo");
+        System.out.println("...........................checked exception.................................................");
+        try {
+            FileInputStream file= new FileInputStream("File path");//checked by compiler
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 }
