@@ -1,4 +1,4 @@
-package day40_FinalKeyword;
+package day31_Constructor.day40_FinalKeyword;
 
 public class Animal {
     private String name;
