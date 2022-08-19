@@ -81,7 +81,9 @@ Exception handlings:
 
 Interview Question:
 
-		final vs finally vs finalize
+		final(key word: aplicable for variable,methods, class) vs
+		finally(optional block for try&catch-after the last catch block ) vs
+		finalize(every single obj has finalize:Garbage collection)
 
 
 
