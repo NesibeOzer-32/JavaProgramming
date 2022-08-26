@@ -1,4 +1,4 @@
-package day43_Abstraction;
+package day43_Abstraction.ShapeTask;
 
 public abstract class Shape {
     //Küçük detaylarla uğraşmıyoruz. neyin alanı hangi formul? önemli değil

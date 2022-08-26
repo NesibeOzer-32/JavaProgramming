@@ -1,0 +1,103 @@
+
+
+OOP Abstraction: concentrating on essentials (what it is), not worrying about the
+details/implementation (how it's done)
+
+Abstract method: A method without the implementation/body
+
+meant to be overridden
+
+area();
+perimeter();
+...
+eat();
+..
+2 ways to achieve the abstraction:
+				1. Abstract class
+				2. Interface
+
+
+
+Abstract class: meant to be super class (parent)
+		can not be final
+		Not concrete ( can not create object)
+        can have all the methods, variables, and blocks of non-abstract class + abstract methods
+        can have abstract method
+	    can not be instantiated
+
+MUST contain the common features of all the subclasses
+
+interface: blueprint of class
+		   specifies what the class(es) must have
+		   can not be instantiated
+		   can not be final
+
+		   to provide additional methods that any class needs
+
+
+		   What interface can have?
+		   		variables:final static variables ONLY
+
+		   		methods: abstract method, default method, static method
+
+		   		Access modifier: public ONLY
+
+		   what interface can not have?
+		   		Instance variable
+		   		Instance methods
+		   		Constructor
+		   		Blocks
+		   		private, deafult, protected access mdofiers
+
+		   why we need interface?
+		   		one class can extend one class ONLY
+		   		one class can implements multiple interfaces
+		   			(Multiple inheritance is allowed)
+
+		   		100% abstraction
+
+
+
+
+Abastract class vs interface: both are used for achieving abstraction
+							  both can not be instantiated
+							  both can not be final
+							  both are meant to be inherited
+
+
+		  	abstract class: one class can extends one abstract class
+
+		  					can have instances & statics
+
+		  					can have constructor
+
+		  					4 access mdofiers
+
+		  	interface: one class can implement multiple interfaces
+
+
+
+extends vs implements: both are used for inheritance
+
+		extends:
+				class extends class
+				interface extends interface(s)
+
+		implements:
+				class implements interface(s)
+
+
+		extends & implements:
+				extends first then implements
+
+
+
+SHAPE TASK:
+INTERFACE AND ABSTRACT
+
+INTERFACE:
+Sub classların bazılarında ortak olan alanlarda açılan özel bir alandır.
+sınıf açılırken interface başlığı seçilir.
+Bu alanı kullanan sınıflar class ları içine implements eki bu alanın baişlıgını yazar
+
+public class Cylinder extends Shape implements Volume {

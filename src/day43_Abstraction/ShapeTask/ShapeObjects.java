@@ -1,4 +1,8 @@
-package day43_Abstraction;
+package day43_Abstraction.ShapeTask;
+
+import day43_Abstraction.ShapeTask.Circle;
+import day43_Abstraction.ShapeTask.Rectangle;
+import day43_Abstraction.ShapeTask.Square;
 
 public class ShapeObjects {
     public static void main(String[] args) {

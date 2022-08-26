@@ -1,6 +1,6 @@
-package day43_Abstraction;
+package day43_Abstraction.ShapeTask;
 
-public class Cube extends Shape implements Volume{
+public class Cube extends Shape implements Volume {
 
     public double side;
 
