@@ -25,6 +25,3 @@ public class AbstractClass_vs_ConcreteRegularClass {
         B b = new B();
             }
         }
-    }
-
-}
