@@ -1,4 +1,4 @@
-package day43_Abstraction;
+package day43_AbstractionOOP3;
 
 interface AA{
     int a=100;// static and final
