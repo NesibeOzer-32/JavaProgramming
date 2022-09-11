@@ -27,7 +27,7 @@ public class SetInterfacePractice {
         hashSet.addAll(Arrays.asList(null,null,null));
 
         System.out.println("hashSet = " + hashSet);
-        //System.out.println(hashSet.get); get methodu yok
+        //System.out.println(hashSet.get); get methodu yok.
 
     }
 }
