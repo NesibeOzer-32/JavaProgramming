@@ -22,5 +22,11 @@ public class TestEnum {
                 System.out.println("Chrome is selected");
 
         }
+
+        System.out.println("..........................................................");
+
+
+
+        Season season = Season.SUMMER;
     }
 }
