@@ -29,6 +29,7 @@ public class PolymorphismIntro {
         System.out.println(rectangle1.area());
 
         Square square1=new Square();
+
         square1.side=50;
         System.out.println(square1.area());
 
