@@ -1,0 +1,90 @@
+
+
+Access Modifiers:Erişimi belirleyiciler
+    1.public:paket içerisinde ve dışarısından ulaşıma açıktır. Bu tür değişken veya metodlara ulaşmak,
+değişkenlerin değerlerini çekmek ya da değiştirmek mümkündür.
+    2.Protected:Bu tip erişim belirleyicisine sahip değişken ya da metodlar sınıf içerisinden,
+aynı sınıftan oluşturulmuş nesneden ve alt sınıflardan oluşturulmuş nesneden erişime açıktır.
+Ancak bu sınıfın bulunduğu dış paketten erişime açık değildirler fakat dış
+paketteki sınıf import edilip kalıtım uygulanırsa kalıtılan sınıftan erişime açıktır ama yine
+de nesne ulaşımına kapalıdır.
+    3.default:sınıf içerisinden erişime, nesneden erişime, paket içinden erişime açıktırlar
+ancak protected a aksi olarak bu tür değişkenler dış paketlerden kalıtım ile dahi olsa ulaşıma açık değildirler.
+     4.Privite: Sadece sınıf içerisinden erişime açıktırlar.
+
+		public > protected > default > private
+
+
+Final Keyword: unchangable
+
+		Variables: can not be reassigned
+
+		Methods: can not be overridden
+
+		Classes: can not be inherited (can not be parent)
+
+
+Exceptions Topic:
+programın çalışması esnasında (runtime boyunca) meydana gelen anormal durumlardır.
+Exceptionlar hata değillerdir. Programda hata oluşursa program direk olarak kapanır
+fakat Exception oluşursa program tarafından idare edilebilir ve durdurulma önlenebilir.
+
+An unwanted or unexpected event, Occurs during the compile time or during the runtime
+		1. Unchecked vs Checked
+		2. try & catch blocks
+		3. Multi-catch block
+		4. finally block
+
+Runtime Exception is Parent of the all objects exception
+OutOfMemoryError: heap memory is full
+
+
+
+Exceptions: unexpected or unwanted events
+
+		Unchecked (unexpected event): occurs during the runtime
+
+					all the RuntimeExceptions are unchecked exceptions
+ Compiler tarafından handle etme zorunluluğu olmayan hata tipleridir . Fakat Runtime sırasında
+ hata aldıgımız durumda handle etmemişsek programı recover etme şansımız yoktur
+
+		checked (unwanted event): occurs during the compile time
+
+					all the exceptions that are not RuntimeExceptions are checked exception
+
+Bazı kod bloklarının hata fırlatabilme durumu ele alınarak handle etmemiz gerekmektedir.
+Örnek olarak java.io.FileReader objesini oluşturdugumuz zaman compiler bizde exception ı handle
+etmemizi isteyecektir . Aksi durumda projeyi compile edemeyiz.
+
+
+Exception handlings:
+
+		1. Try & Catch blocks: used for handling checked and unchecked exceptions
+                               Hataları, istisnaları ayıklamak için kullanılır.
+						try{
+
+							exception code
+
+						}catch(ExceptionClass  e){--(unchecked ise RuntimeException e(parent of unchecked-kapsıyor diğerlerini) )
+
+							e.printStackTrace();---hatanın ne olduğunu rapor ediyor.
+
+						} if else gibi sadece biri işleme giriyor.
+
+
+			Multi-catch block: parent exception type can not be placed before the child exception type
+
+			finally block: always gets executed regardless of the exception is being handled or not handled
+
+							to stop the execution of the finally block: Syste.exit(0)
+
+
+Interview Question:
+
+		final(key word: aplicable for variable,methods, class) vs
+		finally(optional block for try&catch-after the last catch block ) vs
+		finalize(every single obj has finalize:Garbage collection)
+
+
+
+nex
